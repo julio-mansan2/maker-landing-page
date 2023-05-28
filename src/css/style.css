@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    background: var(--black);
+}
+
+.mobile {
+    display: none;
+}
+
+.header {
+    grid-area: header;
+    padding: 5% 7%;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 10% 25%;
+    text-align: center;
+    background: url(../images/bg-hero-squiggle.svg) center no-repeat,
+            url(../images/illustration-hero-left.svg) -10% 50% no-repeat,
+            url(../images/illustration-hero-right.svg) 110% 50% no-repeat;
+    margin-bottom: 4.375rem;
+}
+
+.intro h1 {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.intro .love {
+    color: var(--cyan);
+}
+
+.intro p {
+    font-size: 1.125rem;
+    color: var(--grey);
+    margin-bottom: 0.625rem;
+}
+
+.main .features {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 7%;
+    gap: 2.8125rem;
+    align-items: flex-start;
+}
+
+.main .features .image {
+    min-height: 11.5rem;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875rem;
+    border-radius: 3.125rem;
+    width: 11.25rem;
+    margin-bottom: 1.875rem;
+}
+
+.features h2 {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.features p {
+    color: var(--grey);
+}
+
+.main .feature:nth-child(odd) {
+    position: relative;
+    bottom: 4.375rem;
+}
+
+.main .plans {
+    padding: 10% 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.375rem;
+}
+
+.main .plan-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.main .plan-info h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.main .plan-info p {
+    color: var(--grey);
+}
+
+.choose-plan {
+    display: flex;
+    gap: 3.125rem;
+    align-items: center;
+}
+
+.main .plan-1 {
+    background: var(--blue);
+    padding: 3.125rem 1.875rem 1.875rem 1.25rem;
+    position: relative;
+    border-radius: 10px;
+}
+
+.main .plan-1 img {
+    position: absolute;
+    top: -5%;
+}
+
+.main .plan-1 h3 {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin-bottom: 0.625rem;
+}
+
+.main .plan-1 p {
+    color: var(--grey);
+    font-weight: 700;
+    margin-bottom: 1.875rem;
+}
+
+.main .benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.plan-1 .benefits h2 {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.plan-1 .benefits ul {
+    list-style: url(../images/icon-check-cyan.svg);
+    margin-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.plan-1 .benefits li {
+    color: var(--white);
+}
+
+.main .plan-2 {
+    background: var(--cyan);
+    padding: 3.125rem 1.875rem 1.875rem 1.25rem;
+    position: relative;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.main .plan-2 img {
+    position: absolute;
+    top: -10%;
+}
+
+.main .plan-2 h3 {
+    color: var(--blue);
+    font-size: 1.3rem;
+    margin-bottom: 0.625rem;
+}
+
+.main .plan-2 p {
+    color: var(--grey);
+    font-weight: 400;
+    margin-bottom: 1.875rem;
+}
+
+.plan-2 .benefits h2 {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.plan-2 .benefits span {
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.plan-2 .benefits ul {
+    list-style: url(../images/icon-check.svg);
+    margin-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.plan-2 .benefits li {
+    color: var(--blue);
+}
+
+.footer {
+    grid-area: footer;
+    padding: 7% 0 10% 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(../images/bg-footer-squiggle.svg) center center no-repeat;
+}
+
+.footer form {
+    display: flex;
+    gap: 0.625rem;
+    width: 40%;
+}
+
+.footer h2 {
+    color: var(--white);
+    margin-bottom: 1.875rem;
+}
+
+#input-email {
+    background: var(--blue);
+    width: 100%;
+    padding: 0.9375rem;
+    border-radius: 6.25rem;
+    color: var(--grey);
+    font-family: 'Manrope', sans-serif;
+}
+
+#submit {
+    font-family: 'Manrope', sans-serif;
+    width: 40%;
+    background: var(--cyan);
+    border-radius: 100px;
+    color: var(--blue);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background: var(--blue);
+    color: var(--cyan);
+}
+
+.footer .error {
+    padding-left: 30%;
+    align-self: flex-start;
+    color: var(--red);
+}

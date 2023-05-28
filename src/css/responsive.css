@@ -1,0 +1,157 @@
+@media (min-width: 900px) and (max-width: 1200px) {
+    .header {
+        padding: 5%;
+    }
+
+    .main .intro {
+        background: url(../images/bg-hero-squiggle.svg) center no-repeat,
+                url(../images/illustration-hero-left.svg) -40% 50% no-repeat,
+                url(../images/illustration-hero-right.svg) 140% 50% no-repeat;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .header {
+        padding: 5%;
+    }
+
+    .main .intro {
+        background: url(../images/bg-hero-squiggle.svg) center/45% no-repeat,
+                url(../images/illustration-hero-left.svg) -65% 50% no-repeat,
+                url(../images/illustration-hero-right.svg) 165% 50% no-repeat;
+    }
+
+    .main .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .main .intro p {
+        font-size: 1rem;
+    }
+
+    .main .features {
+        grid-template-columns: 1fr;
+    }
+
+    .main .feature:nth-child(odd) {
+        position: relative;
+        bottom: 0;
+        margin-left: 2.5rem;
+    }
+
+    .main .feature {
+        display: flex;
+        align-items: center;
+        gap: 1.875rem;
+    }
+
+    .main .features .image {
+        min-height: 7.75rem;
+        padding: 0.5rem;
+        border-radius: 2.5rem;
+        width: 7.5rem;
+        margin-bottom: 0px;
+    }
+
+    .main .feature img {
+        width: 60%;
+    }
+
+    .main .plans {
+        padding: 10%;
+    }
+
+    .choose-plan {
+        flex-direction: column;
+    }
+
+    .main .plan-2 {
+        height: 100%;
+    }
+
+    .footer form {
+        width: 60%;
+    }
+
+    .footer .error {
+        padding-left: 20%;
+    }
+} 
+
+@media (max-width: 500px) {
+    .header {
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile {
+        display: block;
+        margin-bottom: 0.625rem;
+    }
+
+    .main .intro {
+        background: none;
+        padding: 5%;
+    }
+
+    .main .features {
+        grid-template-columns: 1fr;
+        padding: 5%;
+    }
+
+    .main .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.25rem;
+    }
+
+    .main .feature:nth-child(odd) {
+        position: relative;
+        bottom: 0;
+    }
+
+    .main .features .image {
+        min-height: 7.75rem;
+        padding: 0.5rem;
+        border-radius: 2.5rem;
+        width: 7.5rem;
+        margin-bottom: 0px;
+    }
+
+    .main .plans {
+        padding: 5%;
+    }
+
+    .main .choose-plan {
+        flex-direction: column;
+    }
+
+    .main .plan-2,
+    .main .plan-1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer {
+        position: relative;
+    }
+
+    .footer form {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    #submit {
+        width: 100%;
+        padding: 0.9375rem;
+    }
+
+    .footer .error {
+        top: 50%;
+        position: absolute;
+    }
+}
